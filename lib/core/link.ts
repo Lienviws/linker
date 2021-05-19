@@ -47,11 +47,12 @@ function run (toolArray: string | string[], prop: ('start'|'stop')) {
     }
 }
 
-export function link (tool: string) {
+export function link (tool = '') {
+    // link all
     return run(tool.split(','), 'start')
 }
 
-export function unlink (tool: string) {
+export function unlink (tool = '') {
     return run(tool.split(','), 'stop')
 }
 

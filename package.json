@@ -9,7 +9,7 @@
   "scripts": {
     "build:json": "js-yaml template.yaml > template.json",
     "link": "npm link",
-    "build": "tsc & npm link"
+    "build": "js-yaml template.yaml > template.json & tsc & npm link"
   },
   "author": "lienviws",
   "license": "ISC",

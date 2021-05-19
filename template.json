@@ -3,12 +3,12 @@
     "start": [
       "<% tool %> config set proxy http://<% proxy %>",
       "<% tool %> config set https-proxy http://<% proxy %>",
-      "<% tool %> config set strict-ssl=false"
+      "<% tool %> config set strict-ssl false"
     ],
     "stop": [
       "<% tool %> config delete proxy",
       "<% tool %> config delete https-proxy",
-      "<% tool %> config set strict-ssl=true"
+      "<% tool %> config set strict-ssl true"
     ],
     "alias": [
       "cnpm"
